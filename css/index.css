@@ -1,0 +1,436 @@
+/*页面初始化*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+#pic{
+    position: fixed;
+    bottom: 0.5rem;
+    left: 2.5rem;
+    animation: move 1s linear infinite;
+    z-index: 999;
+
+}
+@keyframes move {
+    0%{transform: translateY(0rem);opacity: 1  }
+    100%{transform: translateY(-0.5rem);opacity: 0  }
+}
+/*page1结束*/
+/*音乐*/
+.yinyue{
+    display: block;
+    width: 0.44rem;
+    height: 0.44rem;
+    background: url("../img/music.png");
+    background-size: 0.44rem 0.44rem;
+    position: fixed;
+    top:0.2rem;
+    right: 0.2rem;
+    z-index: 999;
+}
+.yilei{
+    animation: yinyue 1s linear infinite;
+}
+@keyframes yinyue {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+/*page2*/
+.page2{
+    background: url("../img/beijnig.png");
+    background-size: 100% 100%;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.page2 .logo img{
+    width: 45%;
+    height:60%;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.5rem;
+}
+.logo p{
+    font-size: 0.7rem;
+    width: 0.5rem;
+    position: absolute;
+    right: 1.3rem;
+    top: 0.8rem;
+}
+.page2 .bi img{
+    width: 50%;
+    height:40%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.page2 .item{
+    font-size: 0.3rem;
+    position: absolute;
+    left: 3rem;
+    top:2rem;
+    color: white;
+    width: 0.3rem;
+
+}
+.page2 .sp{
+    display: block;
+    font-size: 0.3rem;
+    position: absolute;
+    left: 2rem;
+    top: 3.2rem;
+    color: white;
+    width: 0.3rem;
+}
+.page2 .hua img{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 0rem;
+    top: 6.5rem;
+}
+/*page2结束*/
+/*page3*/
+.page3{
+    background: url("../img/beijnig.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.page3 .bi img{
+    width: 50%;
+    height:40%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.page3 .ben img{
+    width: 50%;
+    height:40%;
+    position: absolute;
+    right:-1.1rem;
+    top: -1rem;
+
+}
+.page3 .touxiang img{
+    width: 38%;
+    height: 23%;
+    position: absolute;
+    border-radius: 50%;
+    top: 1.8rem;
+    left: 2rem;
+}
+.page3 .shouji img{
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 5rem;
+    left: 1.1rem;
+}
+.page3 .hua img{
+    width:27%;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 0rem;
+}
+.page3 .xingming p{
+    font-size: 0.5rem;
+    color: white;
+    position: absolute;
+    top: 4.5rem;
+    left: 1.7rem;
+}
+.page3 .wenzi1{
+    position: absolute;
+    top: 6rem;
+    left: 1.8rem;
+}
+.page3 .wenzi1 p{
+    font-size: 0.3rem;
+    color: white;
+}
+/*page4*/
+.page4{
+    background: url("../img/beijnig.png");
+    background-size: 100% 100%;
+
+}
+.page4 .bi img{
+    width: 50%;
+    height:40%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.page4 .ben img{
+    width: 50%;
+    height:40%;
+    position: absolute;
+    right:-1.1rem;
+    top: -1rem;
+
+}
+.page4 .hua img{
+    width:27%;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 0rem;
+    z-index: 999;
+}
+.page4 .bianfu1{
+    background: url("../img/tiaofu.jpg")no-repeat;
+    background-size: 80% 80%;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+.page4 .bianfu2{
+    background: url("../img/tiaofu.jpg")no-repeat;
+    background-size: 80% 80%;
+    padding-top: 2rem;
+}
+.page4 .bianfu3{
+    background: url("../img/tiaofu.jpg")no-repeat;
+    background-size: 80% 80%;
+    padding-top: 2rem;
+}
+.page4 .grjl p{
+    font-size:0.5rem;
+    color: white;
+    text-align: center;
+    z-index: 99;
+    padding-top: 1rem;
+}
+.page4 .ji1{
+    width: 5rem;
+    height: 0.1rem;
+    background: white;
+    position: absolute;
+    top: 1.1rem;
+
+}
+.page4 .ji1 span{
+    width: 0%;
+    height: 0.1rem;
+    background: red;
+    display:block ;
+
+    animation-fill-mode:forwards;
+
+}
+.page4 .ji2{
+    width: 5rem;
+    height: 0.1rem;
+    background: white;
+    position: absolute;
+    top: 7rem;
+
+}
+.page4 .ji2 span{
+    width: 0%;
+    height: 0.1rem;
+    background: red;
+    display:block ;
+
+    animation-fill-mode:forwards;
+
+
+}
+.page4 .ji3{
+    width: 5rem;
+    height: 0.1rem;
+    background: white;
+    position: absolute;
+    top: 9rem;
+
+}
+.page4 .ji3 span{
+    width: 0;
+    height: 0.1rem;
+    background: red;
+    display:block ;
+
+    animation-fill-mode:forwards;
+}
+.soan{animation-name: soan}
+.suan{animation-name: suan}
+.sian{animation-name: sian}
+@keyframes soan {
+    0%{  width: 0;}
+    100%{  width: 85%;}
+}
+@keyframes sian {
+    0%{  width: 0;}
+    100%{  width: 90%;}
+}
+@keyframes suan {
+    0%{  width: 0;}
+    100%{  width: 70%;}
+}
+.bianfu1 p{
+    position: absolute;
+    top: 0.1rem;
+    color: white;
+    font-size: 0.5rem;
+}
+.bianfu2 p{
+    position: absolute;
+    top: 5.7rem;
+    color: white;
+    font-size: 0.5rem;
+
+}
+.bianfu3 p{
+    position: absolute;
+    top: 7.9rem;
+    color: white;
+    font-size: 0.5rem;
+}
+/*page5*/
+.page5{
+    background: url("../img/beijnig.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.page5 p{
+    color: white;
+    font-size: 0.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+.page5 .bi img{
+    width: 50%;
+    height:40%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.page5 .ben img{
+    width: 50%;
+    height:40%;
+    position: absolute;
+    right:-1.1rem;
+    top: -1rem;
+
+}
+.page5 .hua img{
+    width:27%;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 0rem;
+    z-index: 999;
+}
+.page5 .fanke img{
+    width: 60%;
+    height: 25%;
+    border-radius: 0.02rem;
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    z-index: 997;
+}
+.page5 .jd img{
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    left: 3.3rem;
+    top: 5rem;
+    z-index: 999;
+
+}
+.page5 .zq img{
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    left: 0.3rem;
+    top: 5rem;
+
+}
+
+/*page6*/
+.page6{
+    background: url("../img/beijnig.png");
+    background-size: 100% 100%;
+}
+.page6 .box{
+    width: 5rem;
+    height: 1.5rem;
+    background: url("../img/tiaofu.jpg")no-repeat;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    z-index: 999999;
+    position: relative;
+}
+.page6 .box p{
+    float: left;
+    margin-left: 0.2rem;
+}
+.page6 .box a{
+    font-size: 0.3rem;
+    color: red;
+    display: block;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+.page6 .box img{
+    height: 1.4rem;
+    width: 20%;
+    float: right;
+    margin-top: 0.1rem;
+
+}
+.page6 .bi img{
+    width: 50%;
+    height:40%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.page6 .ben img{
+    width: 50%;
+    height:40%;
+    position: absolute;
+    right:-1.1rem;
+    top: -1rem;
+
+}
+.page6 .hua img{
+    width:27%;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 0rem;
+    z-index: 999;
+}
+.page6 .wx img{
+    width: 30%;
+    height:15%;
+    top:9.5rem;
+    left: 4.5rem;
+    position: relative;
+}
+.page7{
+    background: url("../img/shouye.jpg");
+    background-size: 100% 100%;
+}
+.page4 .hide{
+    display: none!important;
+}
